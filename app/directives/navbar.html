@@ -1,0 +1,29 @@
+<div class="header" ng-controller="navctrl">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">
+              <img src="images/logo.jpg" id="logo">
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li ng-class="{active: isActive('/')}"><a ng-href="#/">Inicio</a></li>
+              <li ng-class="{active: isActive('/quienessomos')}"><a ng-href="#/quienessomos">Quienes Somos</a></li>
+              <li ng-class="{active: isActive('/portfolio')}"><a ng-href="#/portfolio">Portfolio</a></li>
+              <li ng-class="{active: isActive('/contacto')}"><a ng-href="#/contacto">contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
